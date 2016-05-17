@@ -1,0 +1,140 @@
+/* CSS declarations go here */
+@font-face {
+    font-family: 'helvetica';
+    src: url("HelveticaNeueLTStd-Bd.otf");
+}
+
+@font-face {
+  font-family: 'helvetica-light';
+  src: url("HelveticaLTStd-Light.otf");
+}
+
+@font-face {
+  font-family: 'Merriweather-Light';
+  font-weight: 100;
+  src: url("Merriweather-Light.ttf");
+}
+
+body {
+  font-family: Merriweather-Light;
+    background: white;
+    font-size: 20px;
+    color: #363636;
+}
+
+svg {
+  font: 10px helvetica;
+  margin-top: 50px;
+
+  shape-rendering: crispEdges;
+  border-radius: 10px;
+//  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+svg-highlight {
+  stroke: #20bef7
+}
+
+.highlight {
+  color: #20bef7;
+  stroke: #20bef7;
+  fill: #20bef7;
+}
+
+.title {
+  font-family: "helvetica";
+  font-size: 3em;
+  letter-spacing: -0.05em;
+  line-height: 0.8em;
+}
+
+.content {
+  font-family: Merriweather-Light;
+  font-weight: 100;
+  line-height: 1.8em;
+  font-size: .7em;
+}
+
+.clickable:hover {
+  stroke-width: 2px;
+}
+
+.data {
+  fill: black;
+}
+
+rect {
+  fill: #21252b;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #20bef7;
+  stroke-dasharray: 4,1;
+  stroke-width: 1px;
+  shape-rendering: crispEdges;
+  opacity: 0.5;
+}
+
+.axis text {
+  font: 10px helvetica-light;
+  stroke: none;
+  stroke-width: .5px;
+  fill: #484847
+}
+
+.flex-container {
+    width: 100%;
+    float: left;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: stretch;
+    padding: 1.5em 1em;
+    border-radius: 0.2em;
+}
+
+.flex-item {
+    //border: dashed 1px #484847;
+    border-radius: 0.2em;
+    margin: 10px 15px 10px 15px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 700px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div {
+  position : relative;
+  display: inline-block;
+}
+
+#plot {
+  flex-grow: 1;
+}
+
+#legend {
+  flex: 0 0 300px;
+}
+
+#panel {
+  margin-top: 3em;
+  margin-left: 1.5em;
+}
+
+#panel div{
+  border-radius: 0.2em;
+  padding: 0.2em 0.4em 0.2em 0.4em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+  position : relative;
+  display: inline-block;
+}
+
+#panel div:hover{
+  box-shadow: 0 4px 8px 0 rgba(32, 190, 247, 0.2), 0 6px 20px 0 rgba(32, 190, 247, 0.19);
+}
